@@ -1,0 +1,15 @@
+services:
+  next-app:
+    container_name: next-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        #ENV_VARIABLE: ${ENV_VARIABLE}
+        NEXT_PUBLIC_BASEPATH: ${NEXT_PUBLIC_BASEPATH}
+    restart: always
+    ports:
+      - 3000:3000
+
+
+  # Add more containers below (nginx, postgres, etc.)
