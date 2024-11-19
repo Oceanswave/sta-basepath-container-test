@@ -20,7 +20,7 @@ export const config = {
       },
     }),
   ],
-  debug: true,
+  debug: process.env.NEXTAUTH_DEBUG === "true",
 } satisfies NextAuthOptions
 
 // Use it in server contexts
