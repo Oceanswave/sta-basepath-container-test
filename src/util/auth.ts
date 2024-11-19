@@ -19,7 +19,8 @@ export const config = {
         }
       },
     }),
-  ]
+  ],
+  debug: true,
 } satisfies NextAuthOptions
 
 // Use it in server contexts
