@@ -15,7 +15,7 @@ export default function Protected() {
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn("github")}>Sign in</button>
+      <button onClick={() => signIn("github", { callbackUrl: `${process.env.NEXT_PUBLIC_BASEPATH}/protected`,  })}>Sign in</button>
     </>
   )
 
